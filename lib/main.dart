@@ -16,7 +16,8 @@ void main() async {
   await initAppModule();
   Wakelock.enable();
   Bloc.observer = MyBlocObserver();
-  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
+  // SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
+  // SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
   runApp(
     EasyLocalization(
       supportedLocales: const [arabicLocale, englishLocale],

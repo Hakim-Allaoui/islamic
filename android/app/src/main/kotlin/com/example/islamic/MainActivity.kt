@@ -1,4 +1,4 @@
-package com.example.islamic
+package com.islam_salaat_times.azan
 
 import io.flutter.embedding.android.FlutterActivity
 

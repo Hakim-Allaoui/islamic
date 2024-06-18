@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:islamic/presentation/components/separator.dart';
 import '../../../app/resources/resources.dart';
 
-
 class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -15,10 +14,10 @@ class MyDrawer extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              height: AppSize.s140,
+              height: AppSize.s160,
               width: AppSize.s160,
-              margin: EdgeInsets.symmetric(vertical: AppMargin.m20),
-              decoration: BoxDecoration(
+              margin: const EdgeInsets.symmetric(vertical: AppMargin.m20),
+              decoration: const BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage(ImageAsset.launcherIcon),
                       fit: BoxFit.fill)),
@@ -40,10 +39,22 @@ class MyDrawer extends StatelessWidget {
     return InkWell(
       onTap: ontap,
       child: Container(
-        margin: EdgeInsets.only(top: AppMargin.m16),
+        margin: const EdgeInsets.only(top: AppMargin.m16),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [Text(title,style: TextStyle(fontSize: AppSize.s20),), Icon(Icons.double_arrow)],
+          children: [
+            Text(
+              title,
+              style: const TextStyle(
+                fontSize: AppSize.s20,
+                color: ColorManager.white,
+              ),
+            ),
+            const Icon(
+              Icons.double_arrow,
+              color: ColorManager.white,
+            ),
+          ],
         ),
       ),
     );

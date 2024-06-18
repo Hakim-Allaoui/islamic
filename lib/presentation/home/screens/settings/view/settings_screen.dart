@@ -58,7 +58,7 @@ class SettingsScreen extends StatelessWidget {
                   } else {
                     return const Icon(
                       Icons.brightness_5,
-                      color: ColorManager.white,
+                      color: ColorManager.black,
                     );
                   }
                 }),

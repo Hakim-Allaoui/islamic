@@ -71,7 +71,9 @@ class PrayerTimingsScreen extends StatelessWidget {
                     isEnglish
                         ? prayerTimingsModel.data!.date!.gregorian!.weekday!.en
                         : prayerTimingsModel.data!.date!.hijri!.weekday!.ar,
-                    style: Theme.of(context).textTheme.displayMedium,
+                    style: Theme.of(context).textTheme.displayMedium!.apply(
+                      color: ColorManager.darkPrimary,
+                    ),
                   ),
                 ),
                 isEnglish
