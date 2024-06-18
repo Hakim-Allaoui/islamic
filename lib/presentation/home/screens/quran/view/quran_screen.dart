@@ -93,7 +93,8 @@ class QuranScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(18.0),
       ),
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: AppPadding.p12.h, vertical: AppPadding.p12.h),
+        padding: EdgeInsets.symmetric(
+            horizontal: AppPadding.p12.h, vertical: AppPadding.p12.h),
         child: GestureDetector(
           child: Row(
             children: [
@@ -123,14 +124,19 @@ class QuranScreen extends StatelessWidget {
                             letterSpacing: AppSize.s0_1.w),
                       ),
                       Padding(
-                        padding: EdgeInsets.symmetric(vertical: AppPadding.p5.h),
+                        padding:
+                            EdgeInsets.symmetric(vertical: AppPadding.p5.h),
                         child: Text(
                           isEnglish ? surahName : englishSurahName,
-                          style: Theme.of(context).textTheme.titleSmall?.copyWith(
-                              fontFamily: FontConstants.meQuranFontFamily,
-                              color: Theme.of(context).unselectedWidgetColor,
-                              wordSpacing: AppSize.s5.w,
-                              letterSpacing: AppSize.s0_1.w),
+                          style: Theme.of(context)
+                              .textTheme
+                              .titleSmall
+                              ?.copyWith(
+                                  fontFamily: FontConstants.meQuranFontFamily,
+                                  color:
+                                      Theme.of(context).unselectedWidgetColor,
+                                  wordSpacing: AppSize.s5.w,
+                                  letterSpacing: AppSize.s0_1.w),
                         ),
                       ),
                     ],
